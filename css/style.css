@@ -1,0 +1,553 @@
+/* ubuntu-regular - latin */
+@font-face {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/ubuntu-v19-latin-regular.eot');
+    /* IE9 Compat Modes */
+    src: local(''),
+        url('../fonts/ubuntu-v19-latin-regular.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/ubuntu-v19-latin-regular.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/ubuntu-v19-latin-regular.woff') format('woff'),
+        /* Modern Browsers */
+        url('../fonts/ubuntu-v19-latin-regular.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/ubuntu-v19-latin-regular.svg#Ubuntu') format('svg');
+    /* Legacy iOS */
+}
+
+/* ubuntu-500 - latin */
+@font-face {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/ubuntu-v19-latin-500.eot');
+    /* IE9 Compat Modes */
+    src: local(''),
+        url('../fonts/ubuntu-v19-latin-500.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/ubuntu-v19-latin-500.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/ubuntu-v19-latin-500.woff') format('woff'),
+        /* Modern Browsers */
+        url('../fonts/ubuntu-v19-latin-500.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/ubuntu-v19-latin-500.svg#Ubuntu') format('svg');
+    /* Legacy iOS */
+}
+
+/* ubuntu-700 - latin */
+@font-face {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/ubuntu-v19-latin-700.eot');
+    /* IE9 Compat Modes */
+    src: local(''),
+        url('../fonts/ubuntu-v19-latin-700.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/ubuntu-v19-latin-700.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/ubuntu-v19-latin-700.woff') format('woff'),
+        /* Modern Browsers */
+        url('../fonts/ubuntu-v19-latin-700.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/ubuntu-v19-latin-700.svg#Ubuntu') format('svg');
+    /* Legacy iOS */
+}
+
+/* Глобальные стили */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+
+html,
+body {
+    background-color: #f1f2f6;
+    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #324046;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    background-color: #e8cb0f;
+    color: #2a363b;
+    padding: 10px 25px;
+    border-radius: 30px;
+    border: 1px solid #e8cb0f;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #e8cb0f;
+}
+
+.header,
+.footer {
+    padding: 2% 15%;
+}
+
+section {
+    padding: 1% 15%;
+}
+
+.section-title {
+    font-size: 42px;
+    font-weight: 500;
+    text-align: center;
+    margin: 0.5em 0;
+}
+
+/*******Главная(index)***************/
+/* шапка */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #2a363b;
+}
+
+.header__call {
+    display: flex;
+    align-items: center;
+}
+
+.call-text {
+    margin-right: 30px;
+}
+
+/* адаптация шапки*/
+@media (max-width:1200px) {
+    .header {
+        padding: 2% 10%;
+    }
+}
+
+@media (max-width:1024px) {
+    .header {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        line-height: 2;
+    }
+}
+
+@media (max-width: 768px) {
+    .header{
+        padding: 2% 5%;
+    }
+    .header>div{
+        margin: 0 32px;
+    }
+
+
+}
+
+@media (min-width:320px) and (max-width:480px) {
+    .header {
+        padding: 2% 5%;
+        font-size: 18px;
+    }
+
+    .header__ligo {
+        text-align: center;
+    }
+
+    .logo-img {
+        max-width: 80%;
+    }
+}
+
+/* меню */
+.nav {
+    background-color: #2a363b;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+    margin: 0 15%;
+}
+
+.menu-item {
+    padding: 30px 50px;
+}
+
+.menu__link {
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.active {
+    border-bottom: 2px dashed #e8cb0f;
+    padding-bottom: 5px;
+}
+
+.menu__link:hover {
+    color: #e8cb0f;
+    transition: all 0.3;
+}
+
+/* AДАПТАЦИЯ */
+@media (max-width:1200px) {
+    .menu-item {
+        padding: 30px 35px;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width:768px) {
+    .menu-item {
+        padding: 20px 35px;
+    }
+
+}
+
+@media (min-width:320px) and (max-width:480px) {
+
+    .nav {
+        position: relative;
+        z-index: 0;
+        padding: 5% 0;
+    }
+
+    .menu {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .menu-item {
+        padding: 20px 0 0 0;
+    }
+
+    .menu-link {
+        font-size: 14px;
+    }
+
+    .menu-item:last-child{
+        margin-bottom: 30px;
+    }
+}
+
+/* j */
+.about {
+    background-image: url(../img/index/about.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+}
+
+.title {
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.about__content {
+    margin-top: 50px;
+
+}
+
+.about__content-text {
+    font-style: 24px;
+    line-height: 2;
+    text-align: center;
+}
+
+/* фдаптация */
+
+@media (max-width:1200px) {
+    .about {
+        padding: 1% 10%;
+        height: 70vh;
+    }
+
+}
+
+@media (max-width:1024px) {
+    .about {
+        padding: 1% 5%;
+        height: 55vh;
+    }
+
+    .title {
+        font-size: 38px;
+        padding-top: 30px;
+    }
+
+    .about__content {
+        margin-top: 50px;
+    }
+
+    .about__content-text {
+        font-size: 22px;
+    }
+}
+
+@media (max-width:768px) {
+    .about {
+        background-image: url(../img/index/about-adapt.jpg);
+        height: 65vh;
+    }
+
+    .title {
+        font-size: 32px;
+        padding-top: 28px;
+    }
+
+    .about__content-text {
+        font-size: 20px;
+    }
+}
+
+@media (min-width:719px) and (max-width:767px) {
+    .about{
+        height: 85vh;
+    }
+}
+
+@media (min-width:479px) and (max-width:720px) {
+    .about{
+        height: 75vh;
+    }
+}
+
+@media (min-width:320px) and (max-width:700px) {
+    .about {
+        background-image: none;
+    }
+
+    .about__content-text {
+        font-size: 16px;
+        line-height:1.5;
+    }
+}
+/* sectionмы в цифрах */
+
+.number{
+    background-color: #f2f2f2;
+    scroll-margin-top: 1em;
+}
+.number__inner{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-top: 70px;
+}
+.number-item{
+    flex: 0 0 22%;
+    font-size: 26px;
+    opacity: 0;
+    animation: ani 6s forwards;
+}
+@keyframes ani {
+    0% {
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.number-item-link{
+    background-color: #e8cb0f;
+    border-radius: 50%;
+    padding: 40px;
+    color: #2a363b;
+    font-weight: 700;
+    display: inline-block;
+}
+.number-item-text{
+    margin-top: 30px;
+line-height: 1.3;
+}
+.number-item-link:hover{
+    background-color: #2a363b;
+   color: #fff;
+   transform: scale(1.2);
+}
+/* адаптация */
+@media (max-width:1200px) {
+    .number {
+        padding: 1% 10%;
+       
+    }
+
+}
+
+@media (max-width:1024px) {
+
+    .section-title {
+        font-size: 32px;
+        
+    }
+    .number-item{
+flex: 0 1 50%;
+margin: 20px 0;
+    }
+}
+@media (max-width:768px) {
+.number{
+    margin-top: 50px;
+    padding: 1% 5%;
+}
+    .number__inner{
+flex-direction: column;
+margin-top: 50px;
+    }
+}
+/* feature */
+.feature{
+    background-color: #fff;
+}
+
+.feature__list{
+    font-size: 24px;
+    margin-top: 50px;
+    counter-reset: num;
+}
+.f-list-item{
+    position: relative;
+    line-height: 1.5;
+    margin: 0.5em;
+    padding: 0 0 30px 80px;
+}
+.text_yellow{
+    color: #e8cb0f;
+    font-weight: 500;
+}
+
+.f-list-item::before{
+    content: "" counter(num);
+    counter-increment: num ;
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 3px solid #e8cb0f;
+    color: #e8cb0f;
+    top:10px ;
+    left: 0;
+   vertical-align: middle;
+   font-size: 28px;
+   text-align: center;
+}
+/* адаптация преимущества */
+@media (max-width:1200px) {
+    .feature {
+        padding: 1% 10%;
+    }
+}
+@media (max-width:1024px) {
+    .feature {
+        padding: 1% 5%;
+    }
+    .feature__list{
+        font-size: 22px;
+    }
+}
+@media (max-width:768px) {
+    .feature__list{
+        font-size: 20px;
+    }
+    .f-list-item{
+        position: relative;
+        line-height: 1.3;
+        margin: 0.3em;
+        padding: 0 0 20px 70px;
+    }
+}
+
+@media (min-width:320px) and (max-width:480px) {
+    .feature__list{
+        font-size: 16px;
+        margin-top: 30px;
+    }
+    .f-list-item::before{
+        top: 20px;
+    }
+
+}
+
+/*******залы***************/
+
+
+/*******секция партфолио***************/
+.portfolio__inner {
+    display: flex;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 60px;
+}
+
+.potfolio__item {
+    background-size: cover;
+    background-position: center;
+    min-height: 32vh;
+    display: grid;
+    border-radius: 5px;
+}
+.prtfolio__item:nth-child(2){
+grid-column: 2/4;
+}
+
+.prtfolio__item:nth-child(4){
+    grid-column: 1/3;
+}
+
+.prtfolio__item:nth-child(6){
+    grid-column: 4;
+    grid-row: 2/4;
+}
+.prtfolio__button{
+    grid-column: 1/5;
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+
+
+
+/*******Контакты***************/
+
+
+/*******Бронирования***************/
